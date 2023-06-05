@@ -35,5 +35,16 @@
         <p class="popup__message">Here is the message.</p>
         <button class="popup__close-btn" popovertarget="popup" popovertargetaction="hide">X</button>
     </article>
+    <script>
+        const popup = document.getElementById("popup");
+        const popupButton = document.querySelector(".popup-open-btn");
+        
+        popupButton.addEventListener("click", async () => {
+            const apiRequest = await fetch("https://swapi.dev/api/people/1");
+            const starWarsData = await apiRequest.json();
+            const popupMessage = popup.querySelector(".popup__message");
+            popupMessage.textContent = starWarsData.name;
+        });
+    </script>
 </body>
 </html>
