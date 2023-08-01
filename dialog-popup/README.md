@@ -4,4 +4,4 @@
 - light dismiss (click outside)
 - animate dialog in
 
-[View live site](https://apcurran.github.io/ui-components-dialog-popup)
+[View live site](https://apcurran.github.io/ui-components-examples/dialog-popup)
